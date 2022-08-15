@@ -1,0 +1,14 @@
+.swiper-pagination-bullet{
+    background: #F8F8F8 !important;
+    opacity: 0.4 !important;
+    transition: 300ms ease-out;
+    &-active{
+        opacity: 1 !important;
+        background: #fff !important;
+    }
+}
+.swiper-slide{
+    img{
+        width: 100%;
+    }
+}

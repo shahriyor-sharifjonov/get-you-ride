@@ -1,0 +1,9 @@
+@import '../../styles/mixins.scss';
+.select{
+    height: 40px !important;
+}
+.container{
+    @include media(768){
+        display: none;
+    }
+}

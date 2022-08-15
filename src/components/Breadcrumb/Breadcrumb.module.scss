@@ -1,0 +1,23 @@
+.container{
+    padding: 8px 0;
+    width: 100%;
+    overflow: hidden;
+    &:not(:last-of-type){
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+}
+.slide{
+    flex-shrink: 1 !important;
+    width: max-content !important;
+    border: 1px solid #BDBDBD;
+    border-radius: 16px;
+    padding: 3px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    white-space: pre;
+}
+.swiper{
+    overflow: visible !important;
+}

@@ -1,0 +1,127 @@
+@import '../../styles/mixins.scss';
+
+.container{
+    padding: 32px 0;
+    min-height: 312px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    @include media(768){
+        flex-direction: column-reverse;
+        row-gap: 16px;
+    }
+}
+.content{
+    width: calc(100% - 342px);
+    display: flex;
+    flex-direction: column;
+    @include media(768){
+        width: 100%;
+    }
+}
+.images{
+    width: 312px;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 0;
+    position: relative;
+    @include media(768){
+        width: 100%;
+    }
+}
+.like{
+    position: absolute !important;
+    z-index: 5 !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    top: 8px;
+    right: 8px;
+}
+.category{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.87);    
+}
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 15px;
+    flex: 1 1 auto;
+}
+.tags{
+    margin-bottom: 20px;
+}
+.tag{
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    gap: 8px;
+    color: rgba(0, 0, 0, 0.87);
+    height: 32px;
+    svg{
+        color: #616161;
+        width: 20px;
+        height: 20px;
+    }
+}
+.author{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: max-content;
+    color: rgba(0, 0, 0, 0.87);
+}
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    svg{
+        color: #FF4500;
+    }
+}
+.right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-right: 2px;
+    span{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;   
+        @include media(576){
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
